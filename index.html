@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julian Manansala</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon4.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c3749576ef.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/websitelogo-2.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Undergraduate Student/Engineering Tech at SJSU</p>
+            <h1>Hi, I'm <span>Julian</span><br>from the Bay Area</h1>
+        </div>
+    </div>
+</div>
+<!---about--->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user-1.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Nice to meet you! I'm Julian, an Undergraduate at San Jose State University. I am currently majoring in Engineering Tech with a Concentration in Network System Management as a freshman, however I'm planning to switch into Computer Engineering. My main focus in my next few years is to get more experienced within the world of AI and machine learning, while also understanding how to physically create the components that AI and software require.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Python, HTML, CSS, JS, Snap!, Scratch, Swift, XCode</li>
+                        <li><span>Graphic Design</span><br>Photoshop/Illustrator</li>
+                        <li><span>Web Developement</span><br>Web App Developement</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Solano CC Steam Discovery Festival</span><br>Volunteered and helped empower kids of all ages with fun and interactive stations.</li>
+                        <li><span>Personal YouTube Channel</span><br>Photoshop/Premiere Pro/Video Recording</li>
+                        <li><span>Chick-Fil-A</span><br>Team Member</li>
+                        <li><span>McDonald's</span><br>Team Member</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2028</span><br>Engineering Tech at San Jose State University</li>
+                        <li><span>2024</span><br>Benicia High School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------services------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-pencil"></i>
+                <h2>Programming</h2>
+                <p>Python, HTML, CSS, JS, Snap!, Scratch, Swift, XCode</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Graphic Design/Video Production</h2>
+                <p>Photoshop, Premiere Pro, After Effects, Lightroom. Use contact information at the end of the page for product request!  </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>XCode and SwiftUI</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------portfolio------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/AI-page-1.png">
+                <div class="layer">
+                    <h3>AP CS AI Page</h3>
+                    <p> Custom trained AI model to detect three objects. Page Holds all the projects I created during my time in AP CSP. Languages were Python, Snap!, Scratch.</p>
+                    <a href="https://julianmsala.github.io/ap-cs-project-site-1.1/ai.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>  
+            <div class="work">
+                <img src="images/ytDownloader-image-1.png">
+                <div class="layer">
+                    <h3>Youtube MP4 Downloader</h3>
+                    <p>Able to paste a YouTube Video, and turn it into an MP4 file that can be downloaded directly into a certain folder. Great for making videos into music files.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Financial Dashboard 1.1.png">
+                <div class="layer">
+                    <h3>Financial Dashboard</h3>
+                    <p>App that manages your finances and all bank accounts in one area.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!------contact----->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> julianmanansala7@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +1 707-656-6754</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/julianmanansala/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://instagram.com/julianmsala"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://open.spotify.com/user/s49muo8kgua1uofg18e34gxic?si=f02b1301dfa54819"><i class="fa-brands fa-spotify"></i></a>
+                </div>
+                <a href="images/Julian Manansala Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Julian Manansala</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbweJ4Bai2_gMzWopEA6Wb2vEjYHSzdyWOeQDvPwo-DUODIZJbj4XOIQsXqHmIXdQmos/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
